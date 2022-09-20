@@ -1,0 +1,55 @@
+{%extends 'base.html'%}
+{%block title%}Log In{%endblock title%}
+{%block content%}
+{%load static%}
+
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        <style>
+           
+            
+        </style>
+        <title>UONSDA PM Home</title>
+        <link rel="stylesheet" href="{%static "css\style.css" %}">
+       
+    </head>
+        
+<header>
+    
+<h3>WELCOME!</h3>
+<h2>UONSDA Personal Ministries' Website</h2>
+</header>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">UONSDA PM</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="{% url  'register' %}">Register</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url  'photos' %}">Photos</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="{% url  'log out' %}">Log out</a>
+            </li>
+            
+          
+          </ul>
+          
+        </div>
+    </nav>
+    <button class="register"> Register for missions</button>
+    <button class="photos">See mission photos and testimonies</button>
+</body>
+
+</html>
+{%endblock content%}
